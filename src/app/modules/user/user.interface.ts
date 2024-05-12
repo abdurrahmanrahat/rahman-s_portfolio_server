@@ -5,6 +5,7 @@ export type TUser = {
   name: string;
   email: string;
   password: string;
+  role: 'USER' | 'ADMIN';
 };
 
 // creating custom statics method

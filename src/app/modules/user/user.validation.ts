@@ -6,4 +6,5 @@ export const userValidationSchema = z.object({
   password: z
     .string()
     .max(10, { message: 'Password size maximum 10 characters.' }),
+  role: z.enum(['USER', 'ADMIN']),
 });
