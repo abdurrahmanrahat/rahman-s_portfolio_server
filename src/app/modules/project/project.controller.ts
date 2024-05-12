@@ -38,7 +38,7 @@ const getAllProjects = async (
   }
 };
 
-export const SkillControllers = {
+export const ProjectControllers = {
   createProject,
   getAllProjects,
 };
