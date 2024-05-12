@@ -13,7 +13,7 @@ const getAllProjectsFromDb = async () => {
   return result;
 };
 
-export const SkillServices = {
+export const ProjectServices = {
   createProjectIntoDb,
   getAllProjectsFromDb,
 };
