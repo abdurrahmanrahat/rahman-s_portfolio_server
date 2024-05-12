@@ -13,7 +13,7 @@ const getAllArticlesFromDb = async () => {
   return result;
 };
 
-export const SkillServices = {
+export const ArticleServices = {
   createArticleIntoDb,
   getAllArticlesFromDb,
 };
