@@ -7,6 +7,13 @@ const createSkillIntoDb = async (skill: TSkill) => {
   return result;
 };
 
+// get
+const getAllSkillsFromDb = async () => {
+  const result = await SkillModel.find();
+  return result;
+};
+
 export const SkillServices = {
   createSkillIntoDb,
+  getAllSkillsFromDb,
 };

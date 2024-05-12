@@ -16,6 +16,25 @@ const createSkill = async (req: Request, res: Response, next: NextFunction) => {
   }
 };
 
+const getAllSkills = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
+  try {
+    const result = await SkillServices.getAllSkillsFromDb();
+
+    res.status(201).json({
+      success: true,
+      message: 'Skill retrieved successfully',
+      data: result,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
 export const SkillControllers = {
   createSkill,
+  getAllSkills,
 };
